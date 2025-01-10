@@ -1,0 +1,11 @@
+//Path module provides a way to work with directories and file paths
+const path = require('path');
+console.log("Current directory: " + path.dirname(__filename));
+console.log("Current filename: " + path.basename(__filename));
+console.log("Current extension: " + path.extname(__filename));
+
+const joinPath = path.join("/master", 'first-module.js');
+console.log("Join path: " + joinPath);
+
+const resolvePath = path.resolve("user", 'first-module.js');
+console.log("Resolve path: " + resolvePath);
