@@ -1,0 +1,22 @@
+//module.exports => export something in a file
+//require => import something in a file
+
+const firstModule = require('./first-module');
+console.log(firstModule.add(5,7));
+
+try {
+    console.log("trying to divide 10 by 0");
+    let result = firstModule.divide(10,0);
+    console.log(result);
+} catch (e) {
+    console.log("Error: " + e.message);
+}
+
+
+//module wrapper
+/*
+(
+    function(exports, require, module, __filename, __dirname){
+        //module code goes here
+    }
+)*/

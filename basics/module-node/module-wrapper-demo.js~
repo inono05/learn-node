@@ -1,0 +1,5 @@
+const moduleWrapperExplorer = require('./module-wrapper-explorer');
+console.log("In wrapper demo");
+console.log("Demo filename: " + __filename);
+console.log("Demo dirname: " + __dirname);
+moduleWrapperExplorer.greet("John Doe");
