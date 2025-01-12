@@ -1,0 +1,7 @@
+function person(name, callbackFn){
+    console.log(`Hello ${name}`);
+    callbackFn();
+}
+
+person('John Doe', () =>{
+    console.log('I am a callback function');})
